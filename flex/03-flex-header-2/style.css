@@ -9,27 +9,34 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
-
-.profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
+  padding: 8px;
+  gap: 16px;
 }
 
 .logo {
+  display: flex;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
 }
 
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
 button {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -37,12 +44,34 @@ button {
   padding: 8px 24px;
 }
 
+.profile-image {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+} 
+
+.left-side {
+  display: flex;
+  flex: auto;
+  justify-content: flex-start;
+  }
+
+.right-side {
+  display: flex;
+  flex: auto;
+  justify-content: flex-end;
+  gap: 16px;
+  }
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
-ul {
-  list-style-type: none;
-}
+
